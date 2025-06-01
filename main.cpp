@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-
+//skibidi test
 using namespace std;
 
 class Konto{
