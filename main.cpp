@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <ncurses>
 
 using namespace std;
 
@@ -33,14 +34,32 @@ class Konto{
     }
     };
 
-int main(){
 
+    void startInit(){
+        cout<<"BANK \n 1. Zarejestruj się \n 2. Zaloguj się \n";
+    };
+
+int main(){
+    int wybor;
+    string regImie,currImie;
     Konto konto1("Konrad", 1000);
-    konto1.wplata(100);
-    konto1.wplata(10000);
-    konto1.wyplata(100);
-    konto1.pokazSaldo();
-    konto1.wyplata(100000);
+    
+    startInit;
+    cin>>wybor;
+    switch(wybor){
+        case 1:
+            cout<<"Wpisz swoje imię: ";
+            cin>>regImie;
+            cout<<"\npomyślnie utworzono konto \n \n";
+            startInit;
+            break;
+        case 2:
+            cout<<"Wpisz swoje imię: ";
+            cin>>currImie;
+            cout<<"\npomyślnie zalogowano \n \n";
+
+            
+    }
 
 
 
