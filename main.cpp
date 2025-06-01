@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <ncurses>
+
 
 using namespace std;
 
@@ -30,7 +30,7 @@ class Konto{
         }
     }
     void pokazSaldo() {
-        cout<<"Saldo konta "<<typek<< "jest równe: "<<saldo<<"."<<endl;
+        cout<<"Saldo konta "<<typek<< " jest równe: "<<saldo<<"."<<endl;
     }
     };
 
@@ -43,8 +43,8 @@ int main(){
     int wybor;
     string regImie,currImie;
     Konto konto1("Konrad", 1000);
-    
-    startInit;
+
+ startInit;
     cin>>wybor;
     switch(wybor){
         case 1:
@@ -60,7 +60,6 @@ int main(){
 
             
     }
-
 
 
 
