@@ -2,7 +2,7 @@
 #include <vector>
 
 using namespace std;
-
+//galaz1
 class Konto
 {
 private:
